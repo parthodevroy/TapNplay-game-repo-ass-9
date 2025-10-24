@@ -1,0 +1,212 @@
+[
+  {
+    "id": "1",
+    "title": "Neon Strike",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-2000-x-1333-4xoxnxck4wm8l5t4.webp",
+    "category": "FPS",
+    "downloadLink": "https://example.com/downloads/neon-strike",
+    "description": "Fast-paced cyberpunk FPS with parkour elements and team-based objectives.",
+    "ratings": "4.9",
+    "developer": "PixelForge Studios"
+  },
+  {
+    "id": "2",
+    "title": "Mystic Valley",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-jza6l59impnr4cwy.webp",
+    "category": "RPG",
+    "downloadLink": "https://play.google.com/store/apps/details?id=com.playrix.mysterymatters&hl=en",
+    "description": "Open-world fantasy RPG with deep character progression and crafting.",
+    "ratings": "4.8",
+    "developer": "Aurora Games"
+  },
+  {
+    "id": "3",
+    "title": "Puzzle Orchard",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-t5fyio3ty08ovk4e.webp",
+    "category": "Puzzle",
+    "downloadLink": "https://example.com/downloads/puzzle-orchard",
+    "description": "Relaxing puzzle game with match-3 mechanics and seasonal events.",
+    "ratings": "4.7",
+    "developer": "BrightSeed"
+  },
+  {
+    "id": "4",
+    "title": "Iron Command",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-gtz1fpmjxngkal1w.webp",
+    "category": "Strategy",
+    "downloadLink": "https://example.com/downloads/iron-command",
+    "description": "Real-time strategy with base-building and squad tactics.",
+    "ratings": "4.7",
+    "developer": "HexaTact"
+  },
+  {
+    "id": "5",
+    "title": "Turbo Drift",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-hhd70pgyjnzbumki.webp",
+    "category": "Racing",
+    "downloadLink": "https://example.com/downloads/turbo-drift",
+    "description": "Arcade racing focused on drifting, custom cars and local multiplayer.",
+    "ratings": "4.1",
+    "developer": "Slipstream Labs"
+  },
+  {
+    "id": "6",
+    "title": "Echo Isles",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-6rkzesxnqv4yohvo.webp",
+    "category": "Adventure",
+    "downloadLink": "https://example.com/downloads/echo-isles",
+    "description": "Narrative-driven adventure across mysterious islands and ruins.",
+    "ratings": "4.8",
+    "developer": "Lighthouse Interactive"
+  },
+  {
+    "id": "7",
+    "title": "Tiny Tower Defense",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-4epl54nklvhft8zw.webp",
+    "category": "Strategy",
+    "downloadLink": "https://example.com/downloads/tiny-tower-defense",
+    "description": "Casual tower defense with charming pixel art and upgrade paths.",
+    "ratings": "4.0",
+    "developer": "GnomeWorks"
+  },
+  {
+    "id": "8",
+    "title": "Starbound Miner",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-3840-x-2400-dzpp9i8mcwyaibsu.webp",
+    "category": "Simulation",
+    "downloadLink": "https://example.com/downloads/starbound-miner",
+    "description": "Mining and colony management on procedurally generated planets.",
+    "ratings": "4.3",
+    "developer": "Orbital Creations"
+  },
+  {
+    "id": "9",
+    "title": "Haunted Hollow",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-lu9vqhd7kljxtv6k.webp",
+    "category": "Horror",
+    "downloadLink": "https://example.com/downloads/haunted-hollow",
+    "description": "Psychological horror with atmospheric sound design and puzzles.",
+    "ratings": "4.5",
+    "developer": "Nightshade Studio"
+  },
+  {
+    "id": "10",
+    "title": "Court Kings",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-l77zcblmj693urd0.webp",
+    "category": "Sports",
+    "downloadLink": "https://example.com/downloads/court-kings",
+    "description": "Street-basketball game with move combos and team play.",
+    "ratings": "3.9",
+    "developer": "Baseline Games"
+  },
+  {
+    "id": "11",
+    "title": "Card Crafters",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-3xsqwsw2fvpiaysw.webp",
+    "category": "Card",
+    "downloadLink": "https://example.com/downloads/card-crafters",
+    "description": "Deck-building card battler with solo campaigns and PvP.",
+    "ratings": "4.6",
+    "developer": "Forge & Folio"
+  },
+  {
+    "id": "12",
+    "title": "Legends of Arena",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-oozaeuix4ywsv5v9.webp",
+    "category": "MOBA",
+    "downloadLink": "https://example.com/downloads/legends-of-arena",
+    "description": "Fast 5v5 battles with short match lengths and ranked play.",
+    "ratings": "4.0",
+    "developer": "ArenaWorks"
+  },
+  {
+    "id": "13",
+    "title": "Shadow Whisper",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-jml1ekw2gftpso8x.webp",
+    "category": "Stealth",
+    "downloadLink": "https://example.com/downloads/shadow-whisper",
+    "description": "Stealth-action where sound and light mechanics matter.",
+    "ratings": "4.4",
+    "developer": "Silent Oak"
+  },
+  {
+    "id": "14",
+    "title": "Builder's Block",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-ghl3lwnmcnbz7npg.webp",
+    "category": "Sandbox",
+    "downloadLink": "https://example.com/downloads/builders-block",
+    "description": "Creative sandbox with multiplayer sharing and mod support.",
+    "ratings": "4.3",
+    "developer": "ClayWorks"
+  },
+  {
+    "id": "15",
+    "title": "Coffee Run",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-1140-x-641-1bvwnag7n5813fu0.webp",
+    "category": "Casual",
+    "downloadLink": "https://example.com/downloads/coffee-run",
+    "description": "Endless runner about delivering coffee through busy city streets.",
+    "ratings": "3.8",
+    "developer": "Cup & Code"
+  },
+  {
+    "id": "16",
+    "title": "Math Wizards",
+    "coverPhoto": "https://wallpapers.com/images/high/pubg-1080p-gaming-g6ugbz9cje8eyw34.webp",
+    "category": "Educational",
+    "downloadLink": "https://example.com/downloads/math-wizards",
+    "description": "Fun math puzzles for kids with progressive difficulty.",
+    "ratings": "4.9",
+    "developer": "SmartBean"
+  },
+  {
+    "id": "17",
+    "title": "Rhythm Riot",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-hhd70pgyjnzbumki.webp",
+    "category": "Music",
+    "downloadLink": "https://example.com/downloads/rhythm-riot",
+    "description": "Music rhythm game with custom track support and leaderboards.",
+    "ratings": "4.2",
+    "developer": "BeatLabs"
+  },
+  {
+    "id": "18",
+    "title": "Knockout Kings",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-isuf0cnhb9867xla.webp",
+    "category": "Fighting",
+    "downloadLink": "https://example.com/downloads/knockout-kings",
+    "description": "2D fighter with combo system and local co-op.",
+    "ratings": "4.1",
+    "developer": "Punchline Studio"
+  },
+  {
+    "id": "19",
+    "title": "Voyage of Ruin",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-3840-x-2400-dzpp9i8mcwyaibsu.webp",
+    "category": "Adventure",
+    "downloadLink": "https://example.com/downloads/voyage-of-ruin",
+    "description": "Story-driven sea exploration and naval combat.",
+    "ratings": "4.0",
+    "developer": "BlueHull Interactive"
+  },
+  {
+    "id": "20",
+    "title": "Tiny Town Tycoon",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-3xsqwsw2fvpiaysw.webp",
+    "category": "Simulation",
+    "downloadLink": "https://example.com/downloads/tiny-town-tycoon",
+    "description": "City-building sim focused on small-scale management and charm.",
+    "ratings": "4.3",
+    "developer": "MaplePixel"
+  },
+  {
+    "id": "21",
+    "title": "Tiny Town",
+    "coverPhoto": "https://wallpapers.com/images/high/pubg-2020-helmeted-girl-in-pink-x6bfgevq2u1qwhzf.webp",
+    "category": "Simulation",
+    "downloadLink": "https://example.com/downloads/tiny-town-tycoon",
+    "description": "City-building sim focused on small-scale management and charm.",
+    "ratings": "4.3",
+    "developer": "MaplePixel"
+  }
+]

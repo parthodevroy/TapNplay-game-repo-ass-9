@@ -1,0 +1,31 @@
+[
+    {
+    "id": "1",
+    "title": "Math Wizards",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-2000-x-1333-4xoxnxck4wm8l5t4.webp",
+    "category": "Educational",
+    "downloadLink": "https://example.com/downloads/math-wizards",
+    "description": "Fun math puzzles for kids with progressive difficulty.",
+    "ratings": "4.9",
+    "developer": "SmartBean"
+  },
+  {
+    "id": "2",
+    "title": "Echo Isles",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-jza6l59impnr4cwy.webp",
+    "category": "Adventure",
+    "downloadLink": "https://example.com/downloads/echo-isles",
+    "description": "Narrative-driven adventure across mysterious islands and ruins.",
+    "ratings": "4.8",
+    "developer": "Lighthouse Interactive"
+  },{
+    "id": "3",
+    "title": "Neon Strike",
+    "coverPhoto": "https://wallpapers.com/images/high/uhd-4k-game-t5fyio3ty08ovk4e.webp",
+    "category": "FPS",
+    "downloadLink": "https://example.com/downloads/neon-strike",
+    "description": "Fast-paced cyberpunk FPS with parkour elements and team-based objectives.",
+    "ratings": "4.7",
+    "developer": "PixelForge Studios"
+  }
+]
