@@ -53,7 +53,7 @@ const Navber = () => {
           </li>
           <li>
             <NavLink
-              to="/ourapps"
+              to="/about"
               className={({ isActive }) => (isActive ? activeLinkStyle : normalLinkStyle)}
             >
               About

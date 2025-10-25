@@ -10,6 +10,8 @@ import Error from "../authentication/error/Error";
 import Forgetpassword from "../authentication/forgepassword/Forgetpassword";
 import UpdatedProfile from "../authentication/updatedprofile/UpdatedProfile";
 import Loading from "../authentication/Loading";
+import Contact from "../pages/Contact";
+import About from "../pages/About";
 
 
 export const router = createBrowserRouter([
@@ -26,7 +28,7 @@ export const router = createBrowserRouter([
         {
             path:"/games",
             Component:Games,
-            loader:()=>fetch("games.json"),
+            loader:()=>fetch("/games.json"),
             hydrateFallbackElement:<Loading></Loading>
         },
         {
@@ -54,6 +56,14 @@ export const router = createBrowserRouter([
 {
   path:"update-profile",
   element:<UpdatedProfile></UpdatedProfile>
+},
+{
+  path:"about",
+  Component:About
+},
+{
+  path:"contact",
+  Component:Contact
 }
 
     ]

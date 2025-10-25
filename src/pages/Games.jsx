@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import Game from "./Game";
 import Loading from "../authentication/Loading";
 import Gamesbanner from "./detailspages/Gamebaner";
@@ -40,6 +40,8 @@ const Games = () => {
       </div>
     </div>
   );
+
 };
 
 export default Games;
+
