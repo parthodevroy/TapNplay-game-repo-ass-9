@@ -96,14 +96,14 @@ import {
 import { auth } from "../authentication/firebase-init";
 import Authcontext from "./Authcontext";
 import Loading from "../authentication/Loading";
-// import Loading from "../components/Loading"; // ✅ spinner import
+// import Loading from "../components/Loading"; // spinner import
 
 const Authprovider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true); // ✅ new loading state
+  const [loading, setLoading] = useState(true); //new loading state
   const provider = new GoogleAuthProvider();
 
-  // ✅ Registration
+  //  Registration
   const registation = async (email, password, name, photoURL) => {
     setLoading(true);
     const result = await createUserWithEmailAndPassword(auth, email, password);
@@ -116,31 +116,31 @@ const Authprovider = ({ children }) => {
     return result;
   };
 
-  // ✅ Login
+  //  Login
   const loginuser = (email, password) => {
     setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
 
-  // ✅ Logout
+  //  Logout
   const logout = () => {
     setLoading(true);
     return signOut(auth);
   };
 
-  // ✅ Password reset
+  // Password reset
   const resetemail = (email) => {
     setLoading(true);
     return sendPasswordResetEmail(auth, email);
   };
 
-  // ✅ Google login
+  //  Google login
   const googlelogin = () => {
     setLoading(true);
     return signInWithPopup(auth, provider);
   };
 
-  // ✅ Update profile instantly
+  // Update profile 
   const update = async (profile) => {
     if (!auth.currentUser) return Promise.reject("No user logged in");
     setLoading(true);
@@ -150,7 +150,7 @@ const Authprovider = ({ children }) => {
     setLoading(false);
   };
 
-  // ✅ Listen to user state
+  //  user state
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
@@ -172,7 +172,7 @@ const Authprovider = ({ children }) => {
     setLoading
   };
 
-  // ✅ যদি loading থাকে → spinner দেখাও
+  // spiner
   if (loading) {
     return <Loading/>;
   }
