@@ -3,6 +3,9 @@ import Navber from '../component/navber/Navber';
 import { Outlet } from 'react-router';
 import Footer from '../component/footer/Footer';
 import Homepage from '../component/homepage/Homepage';
+import Game from '../pages/Game';
+import Gamesbanner from '../pages/detailspages/Gamebaner';
+import Games from '../pages/Games';
 
 const Mainlayout = () => {
     return (
@@ -11,7 +14,13 @@ const Mainlayout = () => {
              <Navber/>
              
            </header>
-            <main><Outlet/></main>
+            <main>
+                
+                <Outlet>
+                   
+                    <Games></Games>
+                </Outlet>
+            </main>
             <Footer/>
         </div>
     );

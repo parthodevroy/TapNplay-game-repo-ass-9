@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router";
-
+import { motion } from 'framer-motion';
 const PopularGames = () => {
   const [games, setGames] = useState([]);
 
@@ -25,9 +25,27 @@ const PopularGames = () => {
               <p className="text-sm">{g.category}</p>
               <p className="text-amber-400 font-bold">⭐ {g.ratings}</p>
               <Link to={`/details/${g.id}`}>
-                <button className="btn btn-sm mt-2 bg-amber-400 border-none">
-                  View Details
-                </button>
+                {/* <button className="btn btn-sm mt-2 bg-amber-400 border-none">
+                  View Details */}
+                {/* </button> */}
+
+                <div className="card-actions justify-center mt-4">
+                          
+                            <motion.button
+                              whileHover={{ scale: 1.1, backgroundColor: "#f59e0b" }}
+                              whileTap={{ scale: 0.9 }}
+                              transition={{ duration: 0.3 }}
+                              className="btn bg-red-600 text-white font-semibold px-4 py-2 rounded-xl"
+                            >
+                              View Details 🚀
+                            </motion.button>
+                         
+                        </div>
+
+
+
+
+
               </Link>
             </div>
           </div>
