@@ -1,7 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, useLocation } from 'react-router';
 
 const Game = ({games}) => {
+
+  
     console.log(games);
     const {coverPhoto,title,description,id}=games
     

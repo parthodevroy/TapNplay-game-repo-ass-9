@@ -15,6 +15,20 @@ const Register = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
     const terms = e.target.terms.checked;
+   const pattern = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
+const emailpattern = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
+
+if (!pattern.test(password)) {
+    setError("Password must be at least 8 characters long and include one uppercase letter and one number.");
+    return;
+} else if (!emailpattern.test(email)) {
+    setError("Please provide a valid email address.");
+    return;
+} else {
+    setError("");
+}
+
+
 
     setError("");
     setSuccess("");

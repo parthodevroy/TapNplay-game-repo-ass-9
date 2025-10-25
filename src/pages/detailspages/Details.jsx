@@ -15,10 +15,20 @@ const Details = () => {
       });
   }, [id]);
 
+  // dynamic 
+  useEffect(() => {
+    if (game) {
+      document.title = `GameHub | ${game.title} Details`;
+    }
+  }, [game]);
+
+  // ✅ Loading state handle
   if (!game) {
     return <p className="text-center text-white mt-10">Loading...</p>;
   }
 
+  // main funtion
+  
   return (
     <div className="flex flex-col items-center text-white p-8">
       <img

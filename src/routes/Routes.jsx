@@ -6,12 +6,16 @@ import Details from "../pages/detailspages/Details";
 import Register from "../authentication/Register";
 import Login from "../authentication/Login";
 import PrivateRoutes from "../privateroutes/Privateroutes";
+import Error from "../authentication/error/Error";
+import Forgetpassword from "../authentication/forgepassword/Forgetpassword";
+import UpdatedProfile from "../authentication/updatedprofile/UpdatedProfile";
 
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component:Mainlayout,
+    errorElement:<Error/>,
     children:[
         {
             index:true,
@@ -40,7 +44,16 @@ export const router = createBrowserRouter([
         {
           path:"login",
           Component:Login
-        }
+        },
+        {
+  path: "/forgetpassword",
+  element: <Forgetpassword />,
+},
+{
+  path:"update-profile",
+  element:<UpdatedProfile></UpdatedProfile>
+}
+
     ]
   },
 ]);
