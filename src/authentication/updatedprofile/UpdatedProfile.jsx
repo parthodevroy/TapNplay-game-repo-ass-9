@@ -2,6 +2,7 @@
 import { useState, useContext, useEffect } from "react";
 import Authcontext from "../../contextprovider/Authcontext";
 import { useNavigate } from "react-router";
+import { toast, ToastContainer } from "react-toastify";
 
 const UpdatedProfile = () => {
   const { user, update, setUser } = useContext(Authcontext); // add setUser
@@ -25,10 +26,10 @@ const UpdatedProfile = () => {
       displayName: name,
       photoURL: photoURL,
     })
-      .then(() => alert("Profile updated successfully!"))
+      .then(() => toast("Profile updated successfully!"))
       e.target.reset()
 
-      .catch((err) => alert(err.message));
+      .catch((err) => toast(err.message));
   };
   if (!user) {
     navigate("/login")
@@ -59,6 +60,7 @@ const UpdatedProfile = () => {
       >
         Save
       </button>
+      <ToastContainer/>
     </div>
   );
 };

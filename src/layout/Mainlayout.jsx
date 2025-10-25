@@ -9,7 +9,7 @@ import Games from '../pages/Games';
 
 const Mainlayout = () => {
     return (
-        <div className='bg-gray-900'>
+        <div className='bg-slate-800'>
            <header>
              <Navber/>
              

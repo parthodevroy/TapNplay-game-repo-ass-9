@@ -32,10 +32,10 @@ const PopularGames = () => {
                 <div className="card-actions justify-center mt-4">
                           
                             <motion.button
-                              whileHover={{ scale: 1.1, backgroundColor: "#f59e0b" }}
+                              whileHover={{ scale: 1.1,  }}
                               whileTap={{ scale: 0.9 }}
                               transition={{ duration: 0.3 }}
-                              className="btn bg-red-600 text-white font-semibold px-4 py-2 rounded-xl"
+                              className="btn bg-slate-800 text-white font-semibold px-4 py-2 rounded-xl"
                             >
                               View Details 🚀
                             </motion.button>

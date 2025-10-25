@@ -19,10 +19,10 @@ const Navber = () => {
     "text-white hover:text-amber-300 transition-colors duration-200";
 
   return (
-    <div className="navbar bg-gray-800 p-4 text-white shadow-sm">
+    <div className="navbar bg-slate-900 p-4 text-white shadow-sm">
       {/* Left side (logo + title) */}
       <div className="navbar-start">
-        <NavLink to="/" className="btn btn-ghost text-xs md:text-xl flex items-center gap-2">
+        <NavLink to="/" className="btn btn-ghost text-red-800 text-xs md:text-xl flex items-center gap-2">
           <img
             src="https://media.istockphoto.com/id/1132282369/photo/men-playing-video-games.jpg?s=1024x1024&w=is&k=20&c=OhYzYQ6dfTph97_73JIhvPK6JMNXmUnh2Acf6HTa3Fo="
             alt="Logo"
@@ -80,8 +80,8 @@ const Navber = () => {
               className="w-10 h-10 rounded-full border-2 border-amber-400"
             /> */}
             <div className="text-left">
-              <p className="text-sm font-semibold">{user.displayName || "Unknown User"}</p>
-              <p className="text-xs text-gray-300">{user.email}</p>
+              <p className="text-sm text-yellow-600 font-semibold">{user.displayName || "Unknown User"}</p>
+              <p className="text-xs text-red-600">{user.email}</p>
             </div>
             {/* <button
               onClick={handleLogout}
@@ -122,4 +122,3 @@ const Navber = () => {
 };
 
 export default Navber;
-
