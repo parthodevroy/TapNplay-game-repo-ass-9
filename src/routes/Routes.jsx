@@ -9,6 +9,7 @@ import PrivateRoutes from "../privateroutes/Privateroutes";
 import Error from "../authentication/error/Error";
 import Forgetpassword from "../authentication/forgepassword/Forgetpassword";
 import UpdatedProfile from "../authentication/updatedprofile/UpdatedProfile";
+import Loading from "../authentication/Loading";
 
 
 export const router = createBrowserRouter([
@@ -25,7 +26,8 @@ export const router = createBrowserRouter([
         {
             path:"/games",
             Component:Games,
-            loader:()=>fetch("games.json")
+            loader:()=>fetch("games.json"),
+            hydrateFallbackElement:<Loading></Loading>
         },
         {
           path:"details/:id",

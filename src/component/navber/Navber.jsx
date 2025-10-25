@@ -22,7 +22,7 @@ const Navber = () => {
     <div className="navbar bg-gray-800 p-4 text-white shadow-sm">
       {/* Left side (logo + title) */}
       <div className="navbar-start">
-        <NavLink to="/" className="btn btn-ghost text-xl flex items-center gap-2">
+        <NavLink to="/" className="btn btn-ghost text-xs md:text-xl flex items-center gap-2">
           <img
             src="https://media.istockphoto.com/id/1132282369/photo/men-playing-video-games.jpg?s=1024x1024&w=is&k=20&c=OhYzYQ6dfTph97_73JIhvPK6JMNXmUnh2Acf6HTa3Fo="
             alt="Logo"
@@ -122,3 +122,4 @@ const Navber = () => {
 };
 
 export default Navber;
+
