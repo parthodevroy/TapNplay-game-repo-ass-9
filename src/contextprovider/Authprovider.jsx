@@ -116,6 +116,26 @@ const Authprovider = ({ children }) => {
     return result;
   };
 
+  // Authprovider.js এর মধ্যে
+// const registation = async (email, password, name, photoURL) => {
+//     // setLoading(true);
+//     try {
+//         const result = await createUserWithEmailAndPassword(auth, email, password);
+        
+//         await updateProfile(result.user, {
+//             displayName: name,
+//             photoURL: photoURL,
+//         });
+        
+//         // সব সফল
+//         // setLoading(false);
+//         return result; 
+//     } catch (error) {
+//         // error ঘটলে সেটিকে ক্যাচ করে পাঠানো 
+//         setLoading(false) // <--- নিশ্চিত করুন লোডিং শেষ হয়
+//         throw error; // <--- error টিকে রিটার্ন করুন যাতে Register.jsx এ ধরা যায়
+//     }
+// };
   //  Login
   const loginuser = (email, password) => {
     setLoading(true);
