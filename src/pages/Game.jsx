@@ -10,11 +10,16 @@ const Game = ({ games }) => {
 
   // Dynamic background color based on rating
   const getBgColor = (rating) => {
-    if (rating >= 4.5) return "bg-gradient-to-b from-green-700 to-green-900";
-    if (rating >= 3.5) return "bg-gradient-to-b from-blue-700 to-blue-900";
-    if (rating >= 2.5) return "bg-gradient-to-b from-yellow-700 to-yellow-900";
-    return "bg-gradient-to-b from-red-700 to-red-900";
-  };
+  if (rating >= 4.5)
+    return "bg-gradient-to-b from-green-900 to-black";
+  if (rating >= 3.5)
+    return "bg-black";
+  if (rating >= 2.5)
+    return "bg-gradient-to-b from-yellow-900 to-black";
+  
+  return "bg-gradient-to-b from-red-900 to-black";
+};
+
 
   return (
     <motion.div
@@ -23,7 +28,7 @@ const Game = ({ games }) => {
       transition={{ duration: 0.5 }}
     >
       <div
-        className={`card text-white w-96 h-[400px] shadow-lg rounded-2xl overflow-hidden ${getBgColor(
+        className={`card text-white bg-gray-950 w-60 h-[300px] shadow-lg rounded-2xl overflow-hidden bg-gray-950(
          ratings
         )}`}
       >
@@ -31,14 +36,14 @@ const Game = ({ games }) => {
           <img
             src={coverPhoto}
             alt={title}
-            className="h-[260px] w-full object-cover"
+            className="h-[160px] w-full object-cover"
           />
         </figure>
 
         <div className="card-body">
-          <h2 className="card-title text-yellow-300 text-2xl">{title}</h2>
-          <p className="font-semibold text-lg text-gray-200">
-            {description.slice(0, 100)}...
+          <h2 className="card-title text-gray-600 text-xl">{title}</h2>
+          <p className="font-semibold text-xls text-gray-200">
+            {description.slice(0, 30)}...
           </p>
 
           <div className="card-actions flex justify-between items-center mt-4">
@@ -53,7 +58,7 @@ const Game = ({ games }) => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ duration: 0.3 }}
-                className="btn bg-black/40 backdrop-blur-md text-white font-semibold px-4 py-2 rounded-xl"
+                className="btn btn-outline bg-black border-black hover:bg-red-600 text-white font-bold px-4 py-2 rounded-xl"
               >
                 View Details...
               </motion.button>

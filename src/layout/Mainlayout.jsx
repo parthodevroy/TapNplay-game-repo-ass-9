@@ -9,8 +9,8 @@ import Games from '../pages/Games';
 
 const Mainlayout = () => {
     return (
-        <div className='bg-slate-800'>
-           <header>
+        <div className='bg-black'>
+           <header className='bg-black'>
              <Navber/>
              
            </header>

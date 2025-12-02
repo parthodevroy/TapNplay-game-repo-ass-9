@@ -33,12 +33,12 @@ export const router = createBrowserRouter([
         },
         {
           path:"details/:id",
-          element:<PrivateRoutes>
+          element:
             <Details>
             
           </Details>
 
-          </PrivateRoutes>
+          
         },
         {
           path:"register",
@@ -51,19 +51,19 @@ export const router = createBrowserRouter([
         },
         {
   path: "/forgetpassword",
-  element: <Forgetpassword />,
+  element: <PrivateRoutes><Forgetpassword /></PrivateRoutes>,
 },
 {
   path:"update-profile",
-  element:<UpdatedProfile></UpdatedProfile>
+  element:<PrivateRoutes><UpdatedProfile></UpdatedProfile></PrivateRoutes>
 },
 {
   path:"about",
-  Component:About
+ element:<PrivateRoutes><About></About></PrivateRoutes>
 },
 {
   path:"contact",
-  Component:Contact
+  Component:<PrivateRoutes><Contact></Contact></PrivateRoutes>
 }
 
     ]

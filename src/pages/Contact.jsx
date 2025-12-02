@@ -12,7 +12,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    toast.success("✅ Message sent successfully!");
+    toast.success("Message sent successfully!");
     setFormData({ name: "", email: "", message: "" });
   };
 
@@ -65,7 +65,7 @@ const Contact = () => {
           whileHover={{ scale: 1.05, backgroundColor: "#f59e0b" }}
           className="btn bg-amber-500 w-full text-black font-semibold"
         >
-          Send Message 🚀
+          Send Message 
         </motion.button>
       </motion.form>
 

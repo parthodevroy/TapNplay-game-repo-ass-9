@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link, NavLink } from "react-router"; // ✅ make sure react-router-dom is imported
+import { Link, NavLink } from "react-router"; 
 import Authcontext from "../../contextprovider/Authcontext";
 
 const Navber = () => {
@@ -14,28 +14,29 @@ const Navber = () => {
   };
 
   const activeLinkStyle =
-    "text-amber-400 font-semibold border-b-2 border-amber-400";
+    "text-amber-400 font-bold border-b-2 border-amber-400";
   const normalLinkStyle =
     "text-white hover:text-amber-300 transition-colors duration-200";
 
   return (
-    <div className="navbar bg-slate-900 p-4 text-white shadow-sm">
+    <div className="navbar max-w-6xl mx-auto text-white shadow-sm">
+      
       {/* Left side (logo + title) */}
       <div className="navbar-start">
-        <NavLink to="/" className="btn btn-ghost text-red-800 text-xs md:text-xl flex items-center gap-2">
+        <NavLink to="/" className="btn btn-ghost text-red-800 text-xs md:text-3xl font-extrabold flex items-center gap-2">
           <img
-            src="https://media.istockphoto.com/id/1132282369/photo/men-playing-video-games.jpg?s=1024x1024&w=is&k=20&c=OhYzYQ6dfTph97_73JIhvPK6JMNXmUnh2Acf6HTa3Fo="
+            src="https://img.pikbest.com/png-images/20241022/shadow-hacker-gaming-logo-design_10991552.png!bwr800"
             alt="Logo"
-            className="w-16 h-12 rounded-md"
+            className="w-12 h-12 rounded-md"
           />
-          Imagination World
+         TapNPlay
         </NavLink>
       </div>
 
       {/* Center (navigation links) */}
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden font-bold  lg:flex">
         <ul className="menu menu-horizontal px-1 gap-6">
-          <li>
+          <li className="text-xl font-extrabold">
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? activeLinkStyle : normalLinkStyle)}
@@ -43,7 +44,7 @@ const Navber = () => {
               Home
             </NavLink>
           </li>
-          <li>
+          <li className="text-xl font-extrabold">
             <NavLink
               to="/games"
               className={({ isActive }) => (isActive ? activeLinkStyle : normalLinkStyle)}
@@ -51,7 +52,8 @@ const Navber = () => {
               Games
             </NavLink>
           </li>
-          <li>
+         {user &&<>
+          <li className="text-xl font-extrabold">
             <NavLink
               to="/about"
               className={({ isActive }) => (isActive ? activeLinkStyle : normalLinkStyle)}
@@ -59,7 +61,7 @@ const Navber = () => {
               About
             </NavLink>
           </li>
-          <li>
+          <li className="text-xl font-extrabold">
             <NavLink
               to="/contact"
               className={({ isActive }) => (isActive ? activeLinkStyle : normalLinkStyle)}
@@ -67,6 +69,7 @@ const Navber = () => {
               Contact
             </NavLink>
           </li>
+         </>}
         </ul>
       </div>
 
@@ -74,26 +77,12 @@ const Navber = () => {
       <div className="navbar-end gap-3">
         {user ? (
           <div className="flex items-center gap-2">
-            {/* <img
-              src={user.photoURL || "https://cdn-icons-png.flaticon.com/512/149/149071.png"}
-              alt="User"
-              className="w-10 h-10 rounded-full border-2 border-amber-400"
-            /> */}
+           
             <div className="text-left">
               <p className="text-sm text-yellow-600 font-semibold">{user.displayName || "Unknown User"}</p>
               <p className="text-xs text-red-600">{user.email}</p>
             </div>
-            {/* <button
-              onClick={handleLogout}
-              className="btn btn-sm bg-red-500 hover:bg-red-600 text-white ml-2"
-            >
-              Logout
-            </button>
-            <Link to="/update-profile">
-              <button className="bg-blue-500 text-white px-4 py-2 rounded">
-                Update Info
-              </button>
-            </Link> */}
+            
             <div className="dropdown ">
   <div tabIndex={0} role="button" className="btn bg-amber-400 m-1">
     <img
@@ -117,6 +106,7 @@ const Navber = () => {
           </NavLink>
         )}
       </div>
+     
     </div>
   );
 };

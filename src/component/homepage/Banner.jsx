@@ -3,13 +3,14 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// import Swiper from "swiper";
 
 const Banner = () => {
-  const banners = [
+  const games = [
     {
       id: 1,
       title: "PlayerUnknown's Battlegrounds",
-      img: "https://wallpapers.com/images/high/pubg-team-of-four-4k-bh8ywj0ino06xl5b.webp",
+      img: "https://cdn.pixabay.com/photo/2020/07/23/15/08/fiction-5431604_1280.jpg",
     },
     {
       id: 2,
@@ -32,22 +33,23 @@ const Banner = () => {
   };
 
   return (
-    <div className="w-full overflow-hidden mt-6">
+    <div className="max-w-6xl mx-auto overflow-hidden mt-6">
       <Slider {...settings}>
-        {banners.map((banner) => (
+        {games.map((banner) => (
           <div key={banner.id} className="relative object-cover">
             <img
               src={banner.img}
               alt={banner.title}
               className="w-full h-[400px] object-cover object-fill object-center rounded-2xl"
             />
-            <h2 className="absolute bottom-10 left-10 text-3xl font-bold bg-black/60 px-4 py-2 text-white rounded">
+            <h2 className="absolute bottom-10 left-10 text-xl font-bold bg-black/60 px-4 py-2 text-white rounded">
               {banner.title}
             </h2>
           </div>
         ))}
       </Slider>
     </div>
+   
   );
 };
 

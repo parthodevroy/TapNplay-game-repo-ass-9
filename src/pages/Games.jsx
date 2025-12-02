@@ -36,12 +36,12 @@ const Games = () => {
     <div>
       <Gamesbanner />
 
-      <h2 className="text-amber-400 text-center text-3xl font-semibold mt-6 mb-4">
+      <h2 className="text-amber-400 text-center text-2xl font-semibold mt-4 mb-2">
         🎮 Explore And Download Our Games
       </h2>
 
       {/*Sorting Dropdown */}
-      <div className="flex justify-center mb-6">
+      <div className="flex justify-center mb-2">
         <select
           onChange={(e) => setSortType(e.target.value)}
           value={sortType}
@@ -55,7 +55,7 @@ const Games = () => {
       </div>
 
       {/*Games  */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto gap-6 p-4 justify-items-center">
         {sortedGames && sortedGames.length > 0 ? (
           sortedGames.map((game) => <Game key={game.id} games={game} />)
         ) : (
