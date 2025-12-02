@@ -4,7 +4,7 @@ A modern gaming platform where users can explore popular games, discover details
 
 🔗 Live Demo
 
- https://fascinating-conkies-6272ee.netlify.app/
+ https://monumental-mooncake-88b3d7.netlify.app/
 
  ## Purpose
 
