@@ -4,7 +4,7 @@ A modern gaming platform where users can explore popular games, discover details
 
 🔗 Live Demo
 
- https://jovial-peony-0b5d1c.netlify.app/games
+ https://fascinating-conkies-6272ee.netlify.app/
 
  ## Purpose
 
