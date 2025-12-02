@@ -23,7 +23,7 @@ const PopularGames = () => {
             <div className="p-4">
               <h3 className="text-xl font-semibold">{g.title}</h3>
               <p className="text-sm">{g.category}</p>
-              <p className="text-amber-400 font-bold">⭐ {g.ratings}</p>
+              <p className="text-amber-400 font-bold">⭐{g.ratings}</p>
               <Link to={`/details/${g.id}`}>
                 {/* <button className="btn btn-sm mt-2 bg-amber-400 border-none">
                   View Details */}

@@ -10,10 +10,10 @@ import Games from '../pages/Games';
 const Mainlayout = () => {
     return (
         <div className='bg-black'>
-           <header className='bg-black'>
-             <Navber/>
-             
-           </header>
+          <header className="sticky top-0 z-50 bg-black w-full shadow-md">
+  <Navber />
+</header>
+
             <main>
                 
                 <Outlet>

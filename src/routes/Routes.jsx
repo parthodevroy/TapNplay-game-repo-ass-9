@@ -12,6 +12,10 @@ import UpdatedProfile from "../authentication/updatedprofile/UpdatedProfile";
 import Loading from "../authentication/Loading";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
+import Support from "../pages/Support";
+import LeaderBoard from "../pages/LeaderBoard/LeaderBoard";
+import Turnament from "../pages/Turnament/Turnament";
+import Faq from "../pages/Faq/Faq";
 
 
 export const router = createBrowserRouter([
@@ -63,7 +67,23 @@ export const router = createBrowserRouter([
 },
 {
   path:"contact",
-  Component:<PrivateRoutes><Contact></Contact></PrivateRoutes>
+  element:<PrivateRoutes><Contact></Contact></PrivateRoutes>
+},
+{
+  path:"support",
+ element:<PrivateRoutes><Support></Support></PrivateRoutes>
+},
+{
+  path:"/leaderboard",
+  Component:LeaderBoard
+},
+{
+  path:"/tuna",
+  Component:Turnament
+},
+{
+  path:"/faq",
+  Component:Faq
 }
 
     ]

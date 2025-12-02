@@ -7,12 +7,12 @@ import Gamesbanner from "./detailspages/Gamebaner";
 import useTitle from "../authentication/useTitle";
 
 const Games = () => {
-  useTitle("GameHub | Games"); // 🧠 Dynamic Tab Title
+  useTitle("GameHub | Games"); 
 
   const gamesdata = useLoaderData();
   const [games, setGames] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [sortType, setSortType] = useState("high"); // default sort
+  const [sortType, setSortType] = useState("high");
 
   useEffect(() => {
     if (gamesdata && gamesdata.length > 0) {
@@ -21,7 +21,7 @@ const Games = () => {
     setLoading(false);
   }, [gamesdata]);
 
-  // 🧮 Sorting logic
+  //  Sorting 
   const sortedGames = [...games].sort((a, b) => {
     if (sortType === "high") return b.ratings - a.ratings;
     if (sortType === "low") return a.ratings - b.ratings;
@@ -40,7 +40,7 @@ const Games = () => {
         🎮 Explore And Download Our Games
       </h2>
 
-      {/*Sorting Dropdown */}
+      {/*Dropdown */}
       <div className="flex justify-center mb-2">
         <select
           onChange={(e) => setSortType(e.target.value)}
