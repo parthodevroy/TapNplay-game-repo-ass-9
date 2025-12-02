@@ -63,23 +63,23 @@ export const router = createBrowserRouter([
 },
 {
   path:"about",
- element:<PrivateRoutes><About></About></PrivateRoutes>
+ element:<About></About>
 },
 {
   path:"contact",
-  element:<PrivateRoutes><Contact></Contact></PrivateRoutes>
+  element:<Contact></Contact>
 },
 {
   path:"support",
- element:<PrivateRoutes><Support></Support></PrivateRoutes>
+ element:<Support></Support>
 },
 {
   path:"/leaderboard",
-  Component:LeaderBoard
+ element:<PrivateRoutes><LeaderBoard></LeaderBoard></PrivateRoutes>
 },
 {
   path:"/tuna",
-  Component:Turnament
+  element:<PrivateRoutes><Turnament></Turnament></PrivateRoutes>
 },
 {
   path:"/faq",
